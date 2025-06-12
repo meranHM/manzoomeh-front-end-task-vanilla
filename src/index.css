@@ -16,4 +16,14 @@
     h1, h2, h3, h4, h5, h6, p {
         @apply font-manrope
     }
+
+    nav ul li  {
+        @apply border-b-2 border-transparent hover:border-current transition-colors duration-300
+    }
+}
+
+@layer utilities {
+    .serviceBtn {
+        @apply p-2 bg-transparent text-black rounded-[50px] hover:bg-[#FE9001] hover:text-white transition-colors
+    }
 }
