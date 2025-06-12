@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+        fontFamily: {
+        dana: ["Dana", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
+      },
       colors: {
         "brand-orange": "#FE9001",
         "gray-light": "#C4C4C4",
@@ -19,10 +23,9 @@ export default {
         "box": "32px",
         "pill": "50px",
       },
-      fontFamily: {
-        dana: ["Dana", "sans-serif"],
-        manrope: ["Manrope", "sans-serif"],
-      },
+      boxShadow: {
+        "card": "0px 10px 20px 0px #0000000D"
+      }
     },
   },
   plugins: [],
