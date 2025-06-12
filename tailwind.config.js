@@ -26,6 +26,9 @@ export default {
       },
       boxShadow: {
         "card": "0px 10px 20px 0px #0000000D"
+      },
+      margin: {
+        "30": "123px",
       }
     },
   },
