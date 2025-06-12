@@ -349,6 +349,630 @@
             </div>
           </div>
         </section>
+
+        <!-- Featured Tours Section -->
+        <section
+          id="featured-tours"
+          class="w-full px-4 relative flex flex-col"
+        >
+          <div>
+            <div
+              class="flex flex-col text-center"
+            >
+              <h2
+                class="text-2xl font-extrabold text-nowrap"
+              >
+                Our Featured Tours
+              </h2>
+              <p
+                class="font-medium text-[#737373] text-sm mt-1"
+              >
+                Favorite destinations based on customer reviews
+              </p>
+            </div>
+
+            <!-- Tours Filterbox -->
+            <div
+              id="tours-filter-box"
+              class="mt-4 font-manrope text-[0.875rem] flex flex-wrap justify-center gap-2"
+            >
+              <!-- Filter by City -->
+              <label for="city" class="sr-only">Filtery by city</label>
+              <select name="city" id="city" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+              <option value="" disabled selected>City</option>
+              <option value="leipzig">Leipzig</option>
+              <option value="mallorca">Mallorca</option>
+              <option value="istanbul">Istanbul</option>
+              <option value="paris">Paris</option>
+              <option value="london">London</option>
+              <option value="madrid">Madrid</option>
+              <option value="vienna">Vienna</option>
+              </select>
+
+              <!-- Filter by Duration -->
+              <label for="duration" class="sr-only">Filtery by duration</label>
+               <select name="duration" id="duration" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+                <option value="" disabled selected>Duration</option>
+                <option value="one-to-five-nights">1-5 nights</option>
+                <option value="five-to-seven-nights">5-7 nights</option>
+                <option value="seven-to-ten-nights">7-10 nights</option>
+                <option value="10-to-fourteen-nights">10-14 nights</option>
+                <option value="fourteen-to-thirty-nights">14-30 nights</option>
+                <option value="more-than-thirty-nights">more than 30 nights</option>
+               </select>
+
+              <!-- Filter by Review / Rating -->
+              <label for="duration" class="sr-only">Filtery by Ratings</label>
+               <select name="rating" id="rating" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+                <option value="" disabled selected>Review / Rating</option>
+                <option value="highest-rating">Highest Rating</option>
+                <option value="lowest-rating">Lowest Rating</option>
+               </select>
+
+              <!-- Filter by Price Range -->
+              <label for="duration" class="sr-only">Filtery by Ratings</label>
+               <select name="rating" id="rating" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+                <option value="" disabled selected>Price range</option>
+                <option value="most-expensive">Most Expensive</option>
+                <option value="least-expensive">Least Expensive</option>
+               </select>
+            </div>
+          </div>
+
+          <!-- Tour Cards -->
+          <div
+            id="tours-container"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 mt-4"
+          >
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-1.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-2.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-3.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-1.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-2.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-3.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-1.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+            
+            <article class="tourCard">
+              <img 
+                src="/assets/landscape-image-2.png" 
+                alt="Treurer Olive Grove & Grand House"
+              >
+              <div
+                class="flex flex-col p-4 font-dana text-left space-y-2"
+              >
+                <h3
+                  class="font-bold"
+                >
+                  Treurer Olive Grove & Grand House - Adults Only + Flight
+                </h3>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Algaida
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <img 
+                    src="/icons/hotel.png" 
+                    alt="Hotel icon"
+                    class="w-3 h-auto inline-block"
+                    width="12"
+                    height="14"
+                  >
+                  5 Stars - 10/10 Exceptional (9)
+                </p>
+                <p
+                  class="flex items-center gap-2 text-[0.75rem]"
+                >
+                  <span aria-hidden="true">
+                    <img 
+                      src="/icons/flight.png" 
+                      alt="Flight icon"
+                      class="w-3 h-auto inline-block"
+                      width="12"
+                      height="14"
+                    >
+                  </span>
+                  Leipzig(LEJ)-Palma de mallorca
+                </p>
+                <p
+                  class="font-bold text-[1.25rem]"
+                >
+                  1,421 $
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Per traveller
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Sun,6 Jul - Sat , 12 Jul ( 6 nights)
+                </p>
+                <p
+                  class="text-[0.75rem]"
+                >
+                  Found 39 hours ago
+                </p>
+              </div>
+            </article>
+          </div>
+          <button
+            class="flex items-center justify-center font-bold font-manrope my-4 p-3 gap-2 rounded-[50px]"
+          >
+            <img 
+              src="/icons/more.png" 
+              alt="More icon"
+              class="w-6 h-6"
+              width="24"
+              height="24"
+            >
+            Load More Tours
+          </button>
+        </section>
       </main>
 
     </div>

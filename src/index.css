@@ -42,4 +42,8 @@
     .searchInputBox {
         @apply flex items-center border border-gray-medium rounded-xl gap-1 p-2 placeholder:text-xs overflow-hidden w-full lg:w-auto
     }
+
+    .tourCard {
+        @apply flex flex-col bg-white border border-gray-light rounded-xl overflow-hidden
+    }
 }
