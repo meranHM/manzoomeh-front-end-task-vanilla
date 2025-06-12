@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "brand-orange": "FE9001",
+        "brand-orange": "#FE9001",
         "gray-light": "#C4C4C4",
         "gray-medium": "#D7D7D7",
         "gray-dark": "#737373",
@@ -16,8 +16,8 @@ export default {
         "deep-blue-hover": "#03528A",
       },
       borderRadius: {
-        "rounded-box": "32px",
-        "rounded-pill": "50px",
+        "box": "32px",
+        "pill": "50px",
       },
       fontFamily: {
         dana: ["Dana", "sans-serif"],
