@@ -10,7 +10,7 @@
     }
 
     button {
-        @apply bg-[#013D68] text-white text-[0.875rem]
+        @apply bg-deep-blue hover:bg-deep-blue-hover text-white text-sm cursor-pointer transition-colors
     }
 
     h1, h2, h3, h4, h5, h6, p {
