@@ -5,10 +5,10 @@
 @import "./fonts.css";
 
 @layer base {
-    body {
-        @apply font-dana text-black bg-white
+    html, body {
+        @apply w-full font-dana text-black bg-white
     }
-
+ 
     button {
         @apply bg-deep-blue hover:bg-deep-blue-hover text-white text-sm cursor-pointer transition-colors
     }
@@ -22,11 +22,11 @@
     }
 
     input {
-        @apply placeholder:text-xs
+        @apply placeholder:text-xs  px-2 w-full rounded-md
     }
 
     select {
-        @apply font-medium
+        @apply font-medium w-full lg:w-max
     }
 
     nav ul li  {
@@ -40,6 +40,6 @@
     }
 
     .searchInputBox {
-        @apply flex border border-gray-medium rounded-xl gap-1 p-3 placeholder:text-xs overflow-hidden
+        @apply flex items-center border border-gray-medium rounded-xl gap-1 p-2 placeholder:text-xs overflow-hidden w-full lg:w-auto
     }
 }
