@@ -11,7 +11,9 @@ export default {
         "gray-light": "#C4C4C4",
         "gray-medium": "#D7D7D7",
         "gray-dark": "#737373",
-        "gray-soft": "E4E6E8",
+        "gray-soft": "#E4E6E8",
+        "deep-blue": "#013D68",
+        "deep-blue-hover": "#03528A",
       },
       borderRadius: {
         "rounded-box": "32px",
