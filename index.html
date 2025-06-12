@@ -108,23 +108,16 @@
       </header>
 
       <main
-        class="w-full mt-24 flex flex-col space-y-12"
+        class="w-full mt-20 flex flex-col space-y-12"
       >
         <section
           id="hero"
-          class="relative w-full min-h-[600px]"
+          class="relative w-full h-[600px]"
         >
           <!-- First layer for cloud background image -->
           <div
-            class="absolute inset-0 z-0 hidden lg:block"
-          >
-            <img 
-              src="/assets/yellow-clouds-background.png" 
-              alt="Yellow clouds background"
-              aria-hidden="true"
-              class="w-full h-full object-cover"
-            >
-          </div>
+            class="absolute inset-0 z-0 bg-[url('/assets/yellow-clouds-background.png')] scale-[1.05] bg-right-top hidden lg:block"
+          ></div>
 
           <!-- Second layer for person background image -->
           <div
@@ -140,17 +133,17 @@
 
           <!-- Third layer - Hero section content -->
           <div
-            class="relative w-full max-w-7xl mx-auto z-20 overflow-hidden"
+            class="relative w-full max-w-7xl mx-auto z-20 overflow-hidden lg:mt-30"
           >
             <div>
               <h1
-                class="font-extrabold text-2xl text-nowrap"
+                class="font-extrabold text-2xl lg:text-5xl text-nowrap"
               >
                 Unveil the Beaty<br/>
                 of the World Every Day
               </h1>
               <p
-                class="font-medium text-gray-dark text-sm mt-5"
+                class="font-medium text-gray-dark text-sm lg:text-2xl mt-5"
               >
                 Travel Without Limits Browse, Book, Explore
               </p>
@@ -174,7 +167,7 @@
             <!-- Search Box -->
             <div
               id="seach-box"
-              class="relative mt-12 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
+              class="relative mt-16 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
             >
               <div
                 id="services-box"
@@ -299,18 +292,6 @@
                   </button>
                 </form>
             </div>
-          </div>
-        </section>
-        <section class="mx-auto">
-          <div
-            class="bg-red-200"
-          >
-            <label for="test">test</label>
-            <input 
-              type="text" 
-              placeholder="test"
-              class="bg-cyan-300 placeholder:text-white w-auto min-w-0"
-            >
           </div>
         </section>
       </main>
