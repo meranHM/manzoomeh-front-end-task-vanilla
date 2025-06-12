@@ -17,6 +17,14 @@
         @apply font-manrope
     }
 
+    label {
+        @apply font-semibold
+    }
+
+    select {
+        @apply font-semibold
+    }
+
     nav ul li  {
         @apply border-b-2 border-transparent hover:border-current transition-colors duration-300
     }
@@ -24,6 +32,6 @@
 
 @layer utilities {
     .serviceBtn {
-        @apply p-2 bg-transparent text-black rounded-[50px] hover:bg-[#FE9001] hover:text-white transition-colors
+        @apply p-2 bg-transparent text-black rounded-pill hover:bg-brand-orange hover:text-white transition-colors
     }
 }
