@@ -13,7 +13,7 @@
   <body>
     <div id="app">
       <header
-        class="w-full fixed top-0 left-0 z-50 shadow-sm bg-white border border-gray-medium"
+        class="w-full h-20 fixed top-0 left-0 z-50 shadow-sm bg-white border border-gray-medium"
       >
       <!-- Mobile Navbar -->
         <nav
@@ -112,7 +112,7 @@
       >
         <section
           id="hero"
-          class="relative w-full h-[600px]"
+          class="relative w-full min-h-[624px] overflow-hidden"
         >
           <!-- First layer for cloud background image -->
           <div
@@ -121,7 +121,7 @@
 
           <!-- Second layer for person background image -->
           <div
-            class="absolute z-10 max-w-xl bottom-0 right-1/2 hidden lg:block"
+            class="absolute z-10 max-w-2xl bottom-0 -right-14 xl:max-w-[777px] xl:right-[2%] hidden lg:block"
           >
             <img 
               src="/assets/bg-person.webp" 
@@ -133,13 +133,15 @@
 
           <!-- Third layer - Hero section content -->
           <div
-            class="relative w-full max-w-7xl mx-auto z-20 overflow-hidden lg:mt-30"
+            class="relative flex flex-col w-full max-w-7xl mx-auto z-20 overflow-hidden mt-12 lg:mt-32"
           >
-            <div>
+            <div
+              class="px-4"
+            >
               <h1
-                class="font-extrabold text-2xl lg:text-5xl text-nowrap"
+                class="font-extrabold text-2xl lg:text-4xl xl:text-5xl lg:leading-[60px] xl:leading-[76px]"
               >
-                Unveil the Beaty<br/>
+                Unveil the Beauty<br />
                 of the World Every Day
               </h1>
               <p
@@ -167,7 +169,7 @@
             <!-- Search Box -->
             <div
               id="seach-box"
-              class="relative mt-16 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
+              class="relative self-center lg:self-auto mt-16 mx-2 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
             >
               <div
                 id="services-box"
@@ -192,12 +194,12 @@
                   </select>
                 </div>
 
-                <form class="flex flex-col mt-4 py-3 lg:flex-row lg:flex-wrap gap-1">
+                <form class="flex flex-col items-center mt-4 py-3 lg:flex-row lg:flex-wrap lg:justify-center gap-1">
                   
                   <!-- Travel Origin and Destination -->
-                  <div class="relative flex flex-col gap-2 lg:flex-row lg:items-center">
+                  <div class="relative w-full lg:w-max flex flex-col gap-2 lg:flex-row lg:items-center">
                     <div
-                      class="searchInputBox lg:w-[265px]"
+                      class="searchInputBox"
                     >
                       <label for="from">From</label>
                       <input 
@@ -205,11 +207,11 @@
                         name="from" 
                         id="from"
                         placeholder="(Where are you from?)"
-                        class="w-auto"
+                        class="lg:w-[265px]"
                       >
                     </div>
                     <div
-                      class="searchInputBox lg:w-[265px]"
+                      class="searchInputBox"
                     >
                     <label for="to">To</label>
                       <input 
@@ -217,14 +219,14 @@
                         name="to" 
                         id="to" 
                         placeholder="(Where are you traveling to?)"
-
+                        class="lg:w-[265px]"
                       >
                     </div>
                   </div>
 
                   <!-- Departure Date -->
                   <div
-                    class="searchInputBox lg:w-[150px]"
+                    class="searchInputBox"
                   >
                     <label for="departure-date">Date</label>
                     <input 
@@ -232,13 +234,14 @@
                       name="departure-date" 
                       id="departure-date" 
                       placeholder="(Departure date)"
+                      class="lg:w-[150px]"
                     >
                   </div>
 
 
                   <!-- Return Date -->
                   <div
-                    class="searchInputBox lg:w-[150px]"                
+                    class="searchInputBox"                
                   >
                     <label for="return-date">Date</label>
                     <input 
@@ -246,12 +249,13 @@
                       name="return-date" 
                       id="return-date" 
                       placeholder="(Return date)"
+                      class="lg:w-[150px]"
                     >
                   </div>
 
                   <!-- Number of Adults -->
                   <div
-                    class="searchInputBox lg:w-[75px]"
+                    class="searchInputBox"
                   >
                     <label for="number-of-adults">Adult:</label>
                     <input 
@@ -259,14 +263,14 @@
                       name="number-of-adults" 
                       id="number-of-adults" 
                       placeholder="1"
-                      class="placeholder:text-base"
+                      class="placeholder:text-base lg:w-[75px]"
                     >
                   </div>
 
 
                   <!-- Number of children -->
                   <div
-                    class="searchInputBox lg:w-[75px]"               
+                    class="searchInputBox"               
                   >
                     <label for="number-of-children">Child:</label>  
                     <input 
@@ -274,6 +278,7 @@
                       name="number-of-children" 
                       id="number-of-children" 
                       placeholder="0"
+                      class="placeholder:text-base lg:w-[75px]"
                     >
                   </div>
 
