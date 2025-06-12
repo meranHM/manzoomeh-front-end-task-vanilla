@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./fonts.css";
+
+@layer base {
+    body {
+        @apply font-dana text-black bg-white
+    }
+
+    button {
+        @apply bg-[#013D68] text-white text-[0.875rem]
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        @apply font-manrope
+    }
+}

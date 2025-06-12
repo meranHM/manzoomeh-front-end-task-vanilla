@@ -1,0 +1,27 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "brand-orange": "FE9001",
+        "gray-light": "#C4C4C4",
+        "gray-medium": "#D7D7D7",
+        "gray-dark": "#737373",
+        "gray-soft": "E4E6E8",
+      },
+      borderRadius: {
+        "rounded-box": "32px",
+        "rounded-pill": "50px",
+      },
+      fontFamily: {
+        dana: ["Dana", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
+      },
+    },
+  },
+  plugins: [],
+}
