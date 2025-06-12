@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/x-icon" href="/icons/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,7 +11,91 @@
     <title>TBIbooking | Home</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header
+        class="w-full fixed top-0 left-0 z-50 shadow-sm bg-white border border-gray-medium"
+      >
+      <!-- Mobile Navbar -->
+        <nav
+          class="w-full flex justify-between items-center px-4 py-2 lg:hidden"
+        >
+          <div
+            class="w-10"
+          >
+            <a href="#">
+              <img 
+                src="/logos/mobile-logo.png" 
+                alt="TBIbooking logos"
+                width="40"
+                height="53"
+                class="size-full object-cover"
+              >
+            </a>
+          </div>
+
+          <div
+            id="mobile-navbar"
+            class="md:hidden bg-white fixed top-0 left-0 h-screen w-full z-40 flex flex-col items-center justify-center gap-6 transform translate-x-full transition-transform duration-500 ease-in-out shadow-sm shadow-black"
+          >
+            <button
+              class="font-bold px-4 py-2 rounded-[5px]"
+            >
+              Login / Register
+            </button>
+            <ul
+              class="flex flex-col justify-center items-center gap-4"
+            >
+              <li><a href="#"></a></li>
+              <li><a href="#">Hotel</a></li>
+              <li><a href="#">Flight + Hotel</a></li>
+              <li><a href="#">Tour</a></li>
+              <li><a href="#">Insurance</a></li>
+              <li><a href="#">Travel Magazine</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+          <button
+            class="w-8 bg-transparent"
+          >
+            <img
+              id="hamburger-btn"
+              src="/icons/hamburger-icon.png"
+              alt="Hamburger icon"
+              width="32"
+              height="29"
+              class="relative w-full object-cover z-50"
+            >
+          </button>
+        </nav>
+
+        <!-- Desktop Navbar -->
+        <nav
+          class="w-full max-w-7xl mx-auto hidden lg:flex items-center justify-between  px-4 pt-4 pb-3"
+        >
+          <div
+            class="w-40 h-auto"
+          >
+            <a href="#">
+              <img 
+                src="/logos/desktop-logo.png" 
+                alt="TBIbooking logos"
+                width="160"
+                height="54"
+                class="size-full object-cover"
+              >
+            </a>
+          </div>
+
+          <button
+            class="font-bold px-6 py-4 rounded-[5px]"
+          >
+            Login / Register
+          </button>
+        </nav>
+      </header>      
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
+`
