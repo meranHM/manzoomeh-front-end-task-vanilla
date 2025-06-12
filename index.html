@@ -112,23 +112,35 @@
       >
         <section
           id="hero"
-          class="relative"
+          class="relative w-full min-h-[600px]"
         >
           <!-- First layer for cloud background image -->
           <div
-            class="absolute inset-0 -z-10"
+            class="absolute inset-0 z-0 hidden lg:block"
           >
             <img 
               src="/assets/yellow-clouds-background.png" 
               alt="Yellow clouds background"
               aria-hidden="true"
-              class="w-full h-auto"
+              class="w-full h-full object-cover"
+            >
+          </div>
+
+          <!-- Second layer for person background image -->
+          <div
+            class="absolute z-10 max-w-xl bottom-0 right-1/2 hidden lg:block"
+          >
+            <img 
+              src="/assets/bg-person.webp" 
+              alt="A man smiling in the background"
+              aria-hidden="true"
+              class="w-full object-contain"
             >
           </div>
 
           <!-- Third layer - Hero section content -->
           <div
-            class="w-full max-w-7xl mx-auto"
+            class="relative w-full max-w-7xl mx-auto z-20 overflow-hidden"
           >
             <div>
               <h1
@@ -159,20 +171,22 @@
               class="absolute w-8 h-10 top-[18%] left-0 z-0"
             >
 
-            <!-- Seach Box -->
+            <!-- Search Box -->
             <div
               id="seach-box"
-              class="relative mt-12 border border-gray-soft rounded-2xl p-3 shadow-card"
+              class="relative mt-12 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
             >
               <div
                 id="services-box"
-                class="flex flex-wrap justify-center gap-2"
+                class="flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between lg:px-4"
               >
-                  <button class="serviceBtn">Flight</button>
-                  <button class="serviceBtn">Hotels</button>
-                  <button class="serviceBtn">Flight+Hotel</button>
-                  <button class="serviceBtn">Tour</button>
-                  <button class="serviceBtn">Insurance</button>
+                  <div>
+                    <button class="serviceBtn">Flight</button>
+                    <button class="serviceBtn">Hotels</button>
+                    <button class="serviceBtn">Flight+Hotel</button>
+                    <button class="serviceBtn">Tour</button>
+                    <button class="serviceBtn">Insurance</button>
+                  </div>
 
                   <label for="trip-type" class="sr-only">Trip type:</label>
                   <select 
@@ -185,11 +199,12 @@
                   </select>
                 </div>
 
-                <form class="flex flex-col space-y-4 mt-4">
+                <form class="flex flex-col mt-4 py-3 lg:flex-row lg:flex-wrap gap-1">
+                  
                   <!-- Travel Origin and Destination -->
-                  <div class="space-y-2">
+                  <div class="relative flex flex-col gap-2 lg:flex-row lg:items-center">
                     <div
-                      class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
+                      class="searchInputBox lg:w-[265px]"
                     >
                       <label for="from">From</label>
                       <input 
@@ -197,10 +212,11 @@
                         name="from" 
                         id="from"
                         placeholder="(Where are you from?)"
+                        class="w-auto"
                       >
                     </div>
                     <div
-                      class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
+                      class="searchInputBox lg:w-[265px]"
                     >
                     <label for="to">To</label>
                       <input 
@@ -215,7 +231,7 @@
 
                   <!-- Departure Date -->
                   <div
-                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
+                    class="searchInputBox lg:w-[150px]"
                   >
                     <label for="departure-date">Date</label>
                     <input 
@@ -229,7 +245,7 @@
 
                   <!-- Return Date -->
                   <div
-                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
+                    class="searchInputBox lg:w-[150px]"                
                   >
                     <label for="return-date">Date</label>
                     <input 
@@ -242,7 +258,7 @@
 
                   <!-- Number of Adults -->
                   <div
-                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
+                    class="searchInputBox lg:w-[75px]"
                   >
                     <label for="number-of-adults">Adult:</label>
                     <input 
@@ -250,13 +266,14 @@
                       name="number-of-adults" 
                       id="number-of-adults" 
                       placeholder="1"
+                      class="placeholder:text-base"
                     >
                   </div>
 
 
                   <!-- Number of children -->
                   <div
-                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"               
+                    class="searchInputBox lg:w-[75px]"               
                   >
                     <label for="number-of-children">Child:</label>  
                     <input 
@@ -270,7 +287,7 @@
 
                   <!-- Booking class -->
                   <label for="booking-class" class="sr-only">Booking Class</label>
-                  <select name="booking-class" id="booking-class" class="border border-gray-medium rounded-xl px-5 py-3">
+                  <select name="booking-class" id="booking-class" class="border border-gray-medium rounded-xl px-5 py-3 lg:w-[150px]">
                     <option value="economy">Economy</option>
                     <option value="premium-economy">Premium Economy</option>
                     <option value="business">Business</option>
@@ -282,6 +299,18 @@
                   </button>
                 </form>
             </div>
+          </div>
+        </section>
+        <section class="mx-auto">
+          <div
+            class="bg-red-200"
+          >
+            <label for="test">test</label>
+            <input 
+              type="text" 
+              placeholder="test"
+              class="bg-cyan-300 placeholder:text-white w-auto min-w-0"
+            >
           </div>
         </section>
       </main>

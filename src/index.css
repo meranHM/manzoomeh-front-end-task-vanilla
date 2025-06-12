@@ -18,11 +18,15 @@
     }
 
     label {
-        @apply font-semibold
+        @apply font-medium
+    }
+
+    input {
+        @apply placeholder:text-xs
     }
 
     select {
-        @apply font-semibold
+        @apply font-medium
     }
 
     nav ul li  {
@@ -33,5 +37,9 @@
 @layer utilities {
     .serviceBtn {
         @apply p-2 bg-transparent text-black rounded-pill hover:bg-brand-orange hover:text-white transition-colors
+    }
+
+    .searchInputBox {
+        @apply flex border border-gray-medium rounded-xl gap-1 p-3 placeholder:text-xs overflow-hidden
     }
 }
