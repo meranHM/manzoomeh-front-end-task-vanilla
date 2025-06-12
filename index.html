@@ -112,159 +112,176 @@
       >
         <section
           id="hero"
-          class="w-full px-4 relative"
+          class="relative"
         >
-          <div>
-            <h1
-              class="font-extrabold text-2xl text-nowrap"
+          <!-- First layer for cloud background image -->
+          <div
+            class="absolute inset-0 -z-10"
+          >
+            <img 
+              src="/assets/yellow-clouds-background.png" 
+              alt="Yellow clouds background"
+              aria-hidden="true"
+              class="w-full h-auto"
             >
-              Unveil the Beaty<br/>
-              of the World Every Day
-            </h1>
-            <p
-              class="font-medium text-gray-dark text-sm mt-5"
-            >
-              Travel Without Limits Browse, Book, Explore
-            </p>
           </div>
 
-          <img 
-            src="/icons/plus.png" 
-            alt="Plus icon"
-            width="20"
-            height="20"
-            class="absolute w-5 h-5 top-0 right-4 z-0"
-          >
-          <img 
-            src="/icons/marker.png" 
-            alt="Marker icon"
-            width="32"
-            height="40"
-            class="absolute w-8 h-10 top-[18%] left-0 z-0"
-          >
-
-          <!-- Seach Box -->
+          <!-- Third layer - Hero section content -->
           <div
-            id="seach-box"
-            class="relative mt-12 border border-gray-soft rounded-2xl p-3 shadow-card"
+            class="w-full max-w-7xl mx-auto"
           >
-            <div
-              id="services-box"
-              class="flex flex-wrap justify-center gap-2"
+            <div>
+              <h1
+                class="font-extrabold text-2xl text-nowrap"
+              >
+                Unveil the Beaty<br/>
+                of the World Every Day
+              </h1>
+              <p
+                class="font-medium text-gray-dark text-sm mt-5"
+              >
+                Travel Without Limits Browse, Book, Explore
+              </p>
+            </div>
+
+            <img 
+              src="/icons/plus.png" 
+              alt="Plus icon"
+              width="20"
+              height="20"
+              class="absolute w-5 h-5 top-0 right-4 z-0"
             >
-                <button class="serviceBtn">Flight</button>
-                <button class="serviceBtn">Hotels</button>
-                <button class="serviceBtn">Flight+Hotel</button>
-                <button class="serviceBtn">Tour</button>
-                <button class="serviceBtn">Insurance</button>
+            <img 
+              src="/icons/marker.png" 
+              alt="Marker icon"
+              width="32"
+              height="40"
+              class="absolute w-8 h-10 top-[18%] left-0 z-0"
+            >
 
-                <label for="trip-type" class="sr-only">Trip type:</label>
-                <select 
-                  name="trip-type" 
-                  id="trip-type"
-                  class="bg-gray-ultra-light rounded-xl p-3 font-medium"
-                >
-                  <option value="one-way">One-way</option>
-                  <option value="round-trip">Round-trip</option>
-                </select>
-              </div>
+            <!-- Seach Box -->
+            <div
+              id="seach-box"
+              class="relative mt-12 border border-gray-soft rounded-2xl p-3 shadow-card"
+            >
+              <div
+                id="services-box"
+                class="flex flex-wrap justify-center gap-2"
+              >
+                  <button class="serviceBtn">Flight</button>
+                  <button class="serviceBtn">Hotels</button>
+                  <button class="serviceBtn">Flight+Hotel</button>
+                  <button class="serviceBtn">Tour</button>
+                  <button class="serviceBtn">Insurance</button>
 
-              <form class="flex flex-col space-y-4 mt-4">
-                <!-- Travel Origin and Destination -->
-                <div class="space-y-2">
-                  <div
-                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
+                  <label for="trip-type" class="sr-only">Trip type:</label>
+                  <select 
+                    name="trip-type" 
+                    id="trip-type"
+                    class="bg-gray-ultra-light rounded-xl p-3 font-medium"
                   >
-                    <label for="from">From</label>
-                    <input 
-                      type="text" 
-                      name="from" 
-                      id="from"
-                      placeholder="(Where are you from?)"
+                    <option value="one-way">One-way</option>
+                    <option value="round-trip">Round-trip</option>
+                  </select>
+                </div>
+
+                <form class="flex flex-col space-y-4 mt-4">
+                  <!-- Travel Origin and Destination -->
+                  <div class="space-y-2">
+                    <div
+                      class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
                     >
+                      <label for="from">From</label>
+                      <input 
+                        type="text" 
+                        name="from" 
+                        id="from"
+                        placeholder="(Where are you from?)"
+                      >
+                    </div>
+                    <div
+                      class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
+                    >
+                    <label for="to">To</label>
+                      <input 
+                        type="text" 
+                        name="to" 
+                        id="to" 
+                        placeholder="(Where are you traveling to?)"
+
+                      >
+                    </div>
                   </div>
+
+                  <!-- Departure Date -->
                   <div
                     class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
                   >
-                  <label for="to">To</label>
+                    <label for="departure-date">Date</label>
                     <input 
                       type="text" 
-                      name="to" 
-                      id="to" 
-                      placeholder="(Where are you traveling to?)"
-
+                      name="departure-date" 
+                      id="departure-date" 
+                      placeholder="(Departure date)"
                     >
                   </div>
-                </div>
 
-                <!-- Departure Date -->
-                <div
-                  class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
-                >
-                  <label for="departure-date">Date</label>
-                  <input 
-                    type="text" 
-                    name="departure-date" 
-                    id="departure-date" 
-                    placeholder="(Departure date)"
+
+                  <!-- Return Date -->
+                  <div
+                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
                   >
-                </div>
+                    <label for="return-date">Date</label>
+                    <input 
+                      type="text" 
+                      name="return-date" 
+                      id="return-date" 
+                      placeholder="(Return date)"
+                    >
+                  </div>
 
-
-                <!-- Return Date -->
-                <div
-                  class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"                
-                >
-                  <label for="return-date">Date</label>
-                  <input 
-                    type="text" 
-                    name="return-date" 
-                    id="return-date" 
-                    placeholder="(Return date)"
+                  <!-- Number of Adults -->
+                  <div
+                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
                   >
-                </div>
+                    <label for="number-of-adults">Adult:</label>
+                    <input 
+                      type="number" 
+                      name="number-of-adults" 
+                      id="number-of-adults" 
+                      placeholder="1"
+                    >
+                  </div>
 
-                <!-- Number of Adults -->
-                <div
-                  class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"
-                >
-                  <label for="number-of-adults">Adult:</label>
-                  <input 
-                    type="number" 
-                    name="number-of-adults" 
-                    id="number-of-adults" 
-                    placeholder="1"
+
+                  <!-- Number of children -->
+                  <div
+                    class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"               
                   >
-                </div>
+                    <label for="number-of-children">Child:</label>  
+                    <input 
+                      type="number" 
+                      name="number-of-children" 
+                      id="number-of-children" 
+                      placeholder="0"
+                    >
+                  </div>
 
 
-                <!-- Number of children -->
-                <div
-                  class="flex gap-2 border border-gray-medium rounded-xl px-5 py-3 placeholder:text-xs"               
-                >
-                  <label for="number-of-children">Child:</label>  
-                  <input 
-                    type="number" 
-                    name="number-of-children" 
-                    id="number-of-children" 
-                    placeholder="0"
-                  >
-                </div>
+                  <!-- Booking class -->
+                  <label for="booking-class" class="sr-only">Booking Class</label>
+                  <select name="booking-class" id="booking-class" class="border border-gray-medium rounded-xl px-5 py-3">
+                    <option value="economy">Economy</option>
+                    <option value="premium-economy">Premium Economy</option>
+                    <option value="business">Business</option>
+                    <option value="first-class">First Class</option>
+                  </select>
 
-
-                <!-- Booking class -->
-                <label for="booking-class" class="sr-only">Booking Class</label>
-                <select name="booking-class" id="booking-class" class="border border-gray-medium rounded-xl px-5 py-3">
-                  <option value="economy">Economy</option>
-                  <option value="premium-economy">Premium Economy</option>
-                  <option value="business">Business</option>
-                  <option value="first-class">First Class</option>
-                </select>
-
-                <button type="submit" class="rounded-pill px-5 py-3">
-                  Search
-                </button>
-              </form>
+                  <button type="submit" class="rounded-pill px-5 py-3">
+                    Search
+                  </button>
+                </form>
+            </div>
           </div>
         </section>
       </main>
