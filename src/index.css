@@ -13,7 +13,7 @@
         @apply bg-deep-blue hover:bg-deep-blue-hover text-white text-sm cursor-pointer transition-colors
     }
 
-    h1, h2, h3, h4, h5, h6, p {
+    h1, h2, h3, h4, h5, h6, p, span {
         @apply font-manrope
     }
 
@@ -26,7 +26,7 @@
     }
 
     select {
-        @apply font-medium w-full lg:w-max
+        @apply font-medium text-center
     }
 
     nav ul li  {
@@ -35,6 +35,11 @@
 }
 
 @layer utilities {
+    .wrapper {
+        @apply w-full max-w-7xl mx-auto relative flex flex-col overflow-hidden
+    }
+
+    /* Hero Section general styles */
     .serviceBtn {
         @apply p-2 bg-transparent text-black rounded-pill hover:bg-brand-orange hover:text-white transition-colors
     }
@@ -43,7 +48,25 @@
         @apply flex items-center border border-gray-medium rounded-xl gap-1 p-2 placeholder:text-xs overflow-hidden w-full lg:w-auto
     }
 
+    /* Featured Tours Section general styles */
     .tourCard {
-        @apply flex flex-col bg-white border border-gray-light rounded-xl overflow-hidden
+        @apply flex flex-col font-dana bg-white border border-gray-light rounded-xl overflow-hidden text-left space-y-2
+    }
+
+    /* Stats Section general styles */
+    .statsBox {
+        @apply flex flex-col items-center justify-center text-white p-6 gap-2
+    }
+    
+    .statsSpan {
+        @apply text-4xl md:text-5xl lg:text-[52px] font-extrabold
+    }
+
+    .statsP {
+        @apply font-bold md:text-lg lg:text-xl
+    }
+
+    .statsDivider {
+        @apply bg-gray-faint w-[60px] h-[1px] lg:w-[1px] lg:h-[60px]
     }
 }
