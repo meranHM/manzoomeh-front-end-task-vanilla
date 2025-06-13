@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>TBIbooking | Home</title>
   </head>
   <body>
@@ -171,7 +171,7 @@
             <!-- Search Box -->
             <div
               id="seach-box"
-              class="relative self-center lg:self-auto max-w-xl lg:max-w-none mt-16 mx-4 bg-white border border-gray-soft rounded-2xl p-3 shadow-card"
+              class="relative self-center lg:self-auto max-w-xl lg:max-w-none mt-16 mx-4 bg-white border border-gray-soft rounded-2xl p-3 shadow-search-box"
             >
               <div
                 id="services-box"
@@ -369,7 +369,7 @@
                 Our Featured Tours
               </h2>
               <p
-                class="font-medium text-gray-dark text-sm sm:text-base xl:text-xl mt-1"
+                class="font-medium text-gray-dark text-xs sm:text-base xl:text-xl mt-1"
               >
                 Favorite destinations based on customer reviews
               </p>
@@ -378,7 +378,7 @@
             <!-- Tours Filterbox -->
             <div
               id="tours-filter-box"
-              class="mt-4 font-manrope text-sm flex flex-wrap lg:flex-nowrap lg:items-center justify-center gap-2"
+              class="mt-4 mx-2 font-manrope text-sm flex flex-wrap lg:flex-nowrap lg:items-center justify-center gap-2"
             >
               <!-- Filter by City -->
               <label for="city" class="sr-only">Filtery by city</label>
@@ -1039,6 +1039,222 @@
               <span class="statsSpan">26k</span>
               <p class="statsP">Campaigns</p>
             </div>
+        </section>
+
+        <!-- Featured Hotels Section -->
+        <section
+          class="wrapper mt-8"
+        >
+          <!-- Headings -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:px-4"
+          >
+            <div
+              class="text-center lg:text-left"
+            >
+              <h2
+                class="text-2xl sm:text-3xl md:text-4xl xl:text-[52px] font-extrabold text-nowrap"
+              >
+                Our Featured Hotels
+              </h2>
+              <p
+                class="font-medium text-gray-dark text-xs sm:text-base xl:text-xl mt-1"
+              >
+                Favorite destinations based on customer reviews
+              </p>
+            </div>
+
+            <!-- Hotels filterbox -->
+            <div
+              id="tours-filter-box"
+              class="mt-4 mx-2 font-manrope text-sm flex flex-wrap lg:flex-nowrap lg:items-center justify-center gap-2"
+            >
+              <!-- Filter by City -->
+              <label for="city" class="sr-only">Filtery by city</label>
+              <select name="city" id="city" class="bg-gray-soft rounded-pill py-2 px-3 font-medium">
+              <option value="" disabled selected>City</option>
+              <option value="leipzig">Leipzig</option>
+              <option value="mallorca">Mallorca</option>
+              <option value="istanbul">Istanbul</option>
+              <option value="paris">Paris</option>
+              <option value="london">London</option>
+              <option value="madrid">Madrid</option>
+              <option value="vienna">Vienna</option>
+              </select>
+
+              <!-- Filter by Duration -->
+              <label for="duration" class="sr-only">Filtery by duration</label>
+               <select name="duration" id="duration" class="bg-gray-soft rounded-pill py-2 px-3 font-medium">
+                <option value="" disabled selected>Duration</option>
+                <option value="one-to-five-nights">1-5 nights</option>
+                <option value="five-to-seven-nights">5-7 nights</option>
+                <option value="seven-to-ten-nights">7-10 nights</option>
+                <option value="10-to-fourteen-nights">10-14 nights</option>
+                <option value="fourteen-to-thirty-nights">14-30 nights</option>
+                <option value="more-than-thirty-nights">more than 30 nights</option>
+               </select>
+
+              <!-- Filter by Review / Rating -->
+              <label for="duration" class="sr-only">Filtery by Ratings</label>
+               <select name="rating" id="rating" class="bg-gray-soft rounded-pill p-2 font-medium">
+                <option value="" disabled selected>Review / Rating</option>
+                <option value="highest-rating">Highest Rating</option>
+                <option value="lowest-rating">Lowest Rating</option>
+               </select>
+
+              <!-- Filter by Price Range -->
+              <label for="duration" class="sr-only">Filtery by Ratings</label>
+               <select name="rating" id="rating" class="bg-gray-soft rounded-pill p-2 font-medium">
+                <option value="" disabled selected>Price range</option>
+                <option value="most-expensive">Most Expensive</option>
+                <option value="least-expensive">Least Expensive</option>
+               </select>
+            </div>
+          </div>
+
+          <!-- Hotel cards container -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 p-6 md:p-4 lg:p-2"
+          >
+            <article class="hotelCard">
+              <img 
+                src="/assets/atlantis-image.png" 
+                alt="A view of front area of Atlantis hotel"
+              >
+              <div
+                class="flex flex-col p-4 space-y-2"
+              >
+                <span
+                  class="hotelCardRating"
+                >
+                  <img src="/icons/star.png" alt="Star icon" width="20" height="20" class="w-5 h-5">
+                  4 star
+                </span>
+                <h3
+                  class="text-xl font-bold"
+                >
+                  Chiang Mai
+                </h3>
+                <span class="flex items-center gap-4 text-gray-deep">
+                  <img src="/icons/blue-pin.png" alt="Blue map pin" width="12" height="16" class="w-3 h-4">
+                  Thailand
+                </span>
+                <hr />
+                <p
+                  class="text-gray-deep"
+                >
+                  Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.
+                </p>
+                <hr />
+                <div
+                  class="w-full flex justify-between items-center"
+                >
+                  <button
+                    class="bg-blue-light border border-blue-deep-dark text-charcoal-dark font-bold px-5 py-2 rounded-[20px]"
+                  >
+                    Details
+                  </button>
+                  <span
+                    class="font-bold text-2xl"
+                  >
+                    $ 490
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="hotelCard">
+              <img 
+                src="/assets/atlantis-image.png" 
+                alt="A view of front area of Atlantis hotel"
+              >
+              <div
+                class="flex flex-col p-4 space-y-2"
+              >
+                <span
+                  class="hotelCardRating"
+                >
+                  <img src="/icons/star.png" alt="Star icon" width="20" height="20" class="w-5 h-5">
+                  4 star
+                </span>
+                <h3
+                  class="text-xl font-bold"
+                >
+                  Chiang Mai
+                </h3>
+                <span class="flex items-center gap-4 text-gray-deep">
+                  <img src="/icons/blue-pin.png" alt="Blue map pin" width="12" height="16" class="w-3 h-4">
+                  Thailand
+                </span>
+                <hr />
+                <p
+                  class="text-gray-deep"
+                >
+                  Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.
+                </p>
+                <hr />
+                <div
+                  class="w-full flex justify-between items-center"
+                >
+                  <button
+                    class="bg-blue-light border border-blue-deep-dark text-charcoal-dark font-bold px-5 py-2 rounded-[20px]"
+                  >
+                    Details
+                  </button>
+                  <span
+                    class="font-bold text-2xl"
+                  >
+                    $ 490
+                  </span>
+                </div>
+              </div>
+            </article>
+            <article class="hotelCard">
+              <img 
+                src="/assets/atlantis-image.png" 
+                alt="A view of front area of Atlantis hotel"
+              >
+              <div
+                class="flex flex-col p-4 space-y-2"
+              >
+                <span
+                  class="hotelCardRating"
+                >
+                  <img src="/icons/star.png" alt="Star icon" width="20" height="20" class="w-5 h-5">
+                  4 star
+                </span>
+                <h3
+                  class="text-xl font-bold"
+                >
+                  Chiang Mai
+                </h3>
+                <span class="flex items-center gap-4 text-gray-deep">
+                  <img src="/icons/blue-pin.png" alt="Blue map pin" width="12" height="16" class="w-3 h-4">
+                  Thailand
+                </span>
+                <hr />
+                <p
+                  class="text-gray-deep"
+                >
+                  Visit the temples and the Chiang Mai Night Bazaar, a huge huge market located on Chiang Klan Road.
+                </p>
+                <hr />
+                <div
+                  class="w-full flex justify-between items-center"
+                >
+                  <button
+                    class="bg-blue-light border border-blue-deep-dark text-charcoal-dark font-bold px-5 py-2 rounded-[20px]"
+                  >
+                    Details
+                  </button>
+                  <span
+                    class="font-bold text-2xl"
+                  >
+                    $ 490
+                  </span>
+                </div>
+              </div>
+            </article>
+          </div>
         </section>
       </main>
 

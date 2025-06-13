@@ -12,7 +12,8 @@ export default {
         poppins: ["Poppins", "sans-serif"],
       },
       colors: {
-        "brand-orange": "#FE9001",
+        "orange-brand": "#FE9001",
+        "charcoal-dark": "#303030",
         "gray-ultra-light": "#F0F0F0",
         "gray-faint": "#F2F2F2",
         "gray-light": "#C4C4C4",
@@ -20,16 +21,20 @@ export default {
         "gray-deep": "#6E6E6E",
         "gray-dark": "#737373",
         "gray-soft": "#E4E6E8",
-        "deep-blue": "#013D68",
-        "deep-blue-hover": "#03528A",
+        "blue-light": "#D8EAff",
+        "blue-deep": "#013D68",
+        "blue-deep-dark": "#012E41",
+        "blue-deep-hover": "#03528A",
+  
       },
       borderRadius: {
         "box": "32px",
         "pill": "50px",
       },
       boxShadow: {
-        "tour-card": "0px 10px 20px 0px #0000000D",
+        "search-box": "0px 10px 20px 0px #0000000D",
         "hotel-card": "0px 0px 30px 0px #0000001A",
+        "hotel-card-rating": "0px 0px 15px 0px #0000001A",
       },
       margin: {
         "30": "123px",
