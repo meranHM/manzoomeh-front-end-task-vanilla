@@ -28,7 +28,8 @@ export default {
         "pill": "50px",
       },
       boxShadow: {
-        "card": "0px 10px 20px 0px #0000000D"
+        "tour-card": "0px 10px 20px 0px #0000000D",
+        "hotel-card": "0px 0px 30px 0px #0000001A",
       },
       margin: {
         "30": "123px",
