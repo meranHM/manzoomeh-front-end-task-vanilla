@@ -94,4 +94,9 @@
     .carouselSlide button {
         @apply bg-orange-brand-dark rounded-pill px-4 py-2 text-black text-xs font-bold
     }
+
+    /* Travel Blog Section */
+    .travelBlogCard {
+        @apply relative rounded-box overflow-hidden w-[413px] h-[544px]
+    }
 }

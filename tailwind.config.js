@@ -10,10 +10,12 @@ export default {
         dana: ["Dana", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
         poppins: ["Poppins", "sans-serif"],
+        reenie: ["Reenie Beanie", "cursive"],
       },
       colors: {
         "orange-brand": "#FE9001",
         "orange-brand-light": "#FFC700",
+        "orange-brand-medium": "#F18316",
         "orange-brand-dark": "#FFB21D",
         "charcoal-dark": "#303030",
         "gray-ultra-light": "#F0F0F0",
