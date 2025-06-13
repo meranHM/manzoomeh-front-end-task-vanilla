@@ -17,6 +17,7 @@ export default {
         "gray-faint": "#F2F2F2",
         "gray-light": "#C4C4C4",
         "gray-medium": "#D7D7D7",
+        "gray-deep": "#6E6E6E",
         "gray-dark": "#737373",
         "gray-soft": "#E4E6E8",
         "deep-blue": "#013D68",
