@@ -85,4 +85,13 @@
         @apply text-sm text-gray-deep flex items-center rounded-lg gap-2 shadow-hotel-card-rating p-2
 
     }
+
+    /* Promotion Carousel Section */
+    .carouselSlide {
+        @apply relative w-[388px] h-[232px] rounded-2xl
+    }
+
+    .carouselSlide button {
+        @apply bg-orange-brand-dark rounded-pill px-4 py-2 text-black text-xs font-bold
+    }
 }

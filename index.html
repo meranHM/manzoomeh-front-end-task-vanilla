@@ -1043,6 +1043,7 @@
 
         <!-- Featured Hotels Section -->
         <section
+          id="featured-hotels-section"
           class="wrapper mt-8"
         >
           <!-- Headings -->
@@ -1256,10 +1257,107 @@
             </article>
           </div>
         </section>
+
+        <!-- Promotion Carousel Section -->
+        <section
+          id="promotion-carousel-section"
+          class="wrapper mt-28"
+        >
+          <!-- Navigation buttons -->
+          <button
+            class="absolute top-1/2 -translate-y-1/2 left-0 bg-gray-soft p-5 rounded-full"
+          >
+            <img src="/icons/arrow-left.png" alt="Left arrow" class="w-[9.5px] h-[9.5px]">
+          </button>
+          <button
+            class="absolute top-1/2 -translate-y-1/2 right-0 bg-gray-soft p-5 rounded-full"
+          >
+            <img src="/icons/arrow-right.png" alt="Left arrow" class="w-[9.5px] h-[9.5px]">
+          </button>
+
+          <!-- Carousel container -->
+          <div 
+            class="relative self-center px-6"
+          >
+            <div
+              class="flex overflow-x-auto gap-4 snap-x snap-mandatory scroll-smooth lg:scroll-px-4"
+            >
+              <!-- Slide 1 -->
+              <div
+                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-1.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
+              >
+                <div
+                  class="w-full flex flex-col justify-between items-end gap-10"
+                >
+                  <h3 
+                    class="text-2xl font-extrabold leading-relaxed"
+                  >
+                    We Make Every<br />
+                    Trip Special
+                  </h3>
+                </div>
+                <button 
+                  class="bg-orange-brand-dark hover:bg-orange-brand px-4 py-2 rounded-pill font-bold text-black text-sm"
+                >
+                  View More →
+                </button>                
+              </div>
+
+              <!-- Slide 2 -->
+              <div
+                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-2.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
+              >
+                <div
+                  class="w-full flex flex-col justify-between items-start gap-6"
+                >
+                  <span
+                    class="font-bold text-black"
+                  >
+                    Limited Offers
+                  </span>
+                  <h3 
+                    class="text-black text-2xl font-extrabold leading-relaxed"
+                  >
+                    Buy 1, Get 1 Free<br />
+                    Attractions
+                  </h3>
+                  <button 
+                    class="bg-orange-brand-dark hover:bg-orange-brand px-4 py-2 rounded-pill font-bold text-black text-sm"
+                  >
+                    View More →
+                  </button>
+                </div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div
+                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-3.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-start justify-between"
+              >
+                <div class="flex flex-col justify-between items-start gap-6">
+                  <span 
+                    class="bg-orange-brand-light text-black font-bold px-3 py-1 rounded w-fit"
+                  >
+                    Limited Offers
+                  </span>
+                  <h3 
+                    class="bg-orange-brand-light text-black px-3 rounded w-fit text-2xl font-extrabold leading-relaxed"
+                  >
+                    Buy 1, Get 1 Free<br />
+                    Attractions
+                  </h3>
+                </div>
+                <button 
+                  class="bg-orange-brand-dark hover:bg-orange-brand px-4 py-2 rounded-pill font-bold text-black text-sm"
+                >
+                  View More →
+                </button>
+              </div>
+            </div>
+            </div>
+        </section>
       </main>
 
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
-`

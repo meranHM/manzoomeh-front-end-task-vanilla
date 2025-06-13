@@ -13,6 +13,8 @@ export default {
       },
       colors: {
         "orange-brand": "#FE9001",
+        "orange-brand-light": "#FFC700",
+        "orange-brand-dark": "#FFB21D",
         "charcoal-dark": "#303030",
         "gray-ultra-light": "#F0F0F0",
         "gray-faint": "#F2F2F2",
