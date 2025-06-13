@@ -108,11 +108,11 @@
       </header>
 
       <main
-        class="w-full mt-20 flex flex-col space-y-12"
+        class="w-full mt-20 flex flex-col"
       >
         <!-- Hero Section -->
         <section
-          id="hero"
+          id="hero-section"
           class="relative w-full min-h-[624px] overflow-hidden"
         >
           <!-- First layer for cloud background image -->
@@ -122,7 +122,7 @@
 
           <!-- Second layer for person background image -->
           <div
-            class="absolute z-10 max-w-2xl bottom-0 -right-14 xl:max-w-[777px] xl:right-[2%] hidden lg:block"
+            class="absolute z-10 max-w-2xl xl:max-w-[777px] bottom-0 -right-14  xl:right-[2%] hidden lg:block"
           >
             <img 
               src="/assets/bg-person.webp" 
@@ -134,8 +134,9 @@
 
           <!-- Third layer - Hero section content -->
           <div
-            class="relative flex flex-col w-full max-w-7xl mx-auto z-20 overflow-hidden mt-12 lg:mt-32"
+            class="wrapper z-20 overflow-hidden mt-12 lg:mt-32"
           >
+            <!-- Headings -->
             <div
               class="px-4"
             >
@@ -286,7 +287,7 @@
 
                   <!-- Booking class -->
                   <label for="booking-class" class="sr-only">Booking Class</label>
-                  <select name="booking-class" id="booking-class" class="border border-gray-medium rounded-xl px-5 py-3 lg:w-[150px]">
+                  <select name="booking-class" id="booking-class" class="w-full border border-gray-medium rounded-xl px-5 py-3 lg:w-[150px]">
                     <option value="economy">Economy</option>
                     <option value="premium-economy">Premium Economy</option>
                     <option value="business">Business</option>
@@ -303,17 +304,17 @@
 
         <!-- Popular Destinations Section -->
         <section
-          id="popular-destinations"
-          class="w-full px-4 relative flex flex-col items-center"
+          id="popular-destinations-section"
+          class="wrapper items-center mt-30"
         >
           <div class="text-center">
             <h2
-              class="text-xl font-extrabold text-nowrap"
+              class="text-xl md:text-2xl lg:text-4xl font-extrabold text-nowrap"
             >
               Popular Destinations
             </h2>
             <p
-              class="font-medium text-[#737373] text-sm mt-1"
+              class="font-medium text-gray-dark text-sm md:text-base lg:text-xl mt-1"
             >
               Navigate the Globe with Confidence
             </p>
@@ -323,28 +324,28 @@
             id="popular-destinations-carousel"
             class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:flex lg:flex-wrap lg:justify-center gap-3 mt-4"
           >
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] aspect-[150/213] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
-            <div class="w-[150px] h-[213px] overflow-hidden">
+            <div class="w-[149.25px] h-[213px] overflow-hidden">
               <img src="/assets/colosseum.png" alt="colosseum" class="w-full h-full object-cover">
             </div>
           </div>
@@ -352,20 +353,23 @@
 
         <!-- Featured Tours Section -->
         <section
-          id="featured-tours"
-          class="w-full px-4 relative flex flex-col"
+          id="featured-tours-section"
+          class="wrapper mt-24"
         >
-          <div>
+          <!-- Headings -->
+          <div
+            class="lg:flex lg:justify-between lg:items-center lg:px-4"
+          >
             <div
-              class="flex flex-col text-center"
+              class="text-center lg:text-left"
             >
               <h2
-                class="text-2xl font-extrabold text-nowrap"
+                class="text-2xl sm:text-3xl md:text-4xl xl:text-[52px] font-extrabold text-nowrap"
               >
                 Our Featured Tours
               </h2>
               <p
-                class="font-medium text-[#737373] text-sm mt-1"
+                class="font-medium text-gray-dark text-sm sm:text-base xl:text-xl mt-1"
               >
                 Favorite destinations based on customer reviews
               </p>
@@ -374,11 +378,11 @@
             <!-- Tours Filterbox -->
             <div
               id="tours-filter-box"
-              class="mt-4 font-manrope text-[0.875rem] flex flex-wrap justify-center gap-2"
+              class="mt-4 font-manrope text-sm flex flex-wrap lg:flex-nowrap lg:items-center justify-center gap-2"
             >
               <!-- Filter by City -->
               <label for="city" class="sr-only">Filtery by city</label>
-              <select name="city" id="city" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+              <select name="city" id="city" class="bg-gray-soft rounded-pill py-2 px-3 font-medium">
               <option value="" disabled selected>City</option>
               <option value="leipzig">Leipzig</option>
               <option value="mallorca">Mallorca</option>
@@ -391,7 +395,7 @@
 
               <!-- Filter by Duration -->
               <label for="duration" class="sr-only">Filtery by duration</label>
-               <select name="duration" id="duration" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+               <select name="duration" id="duration" class="bg-gray-soft rounded-pill py-2 px-3 font-medium">
                 <option value="" disabled selected>Duration</option>
                 <option value="one-to-five-nights">1-5 nights</option>
                 <option value="five-to-seven-nights">5-7 nights</option>
@@ -403,7 +407,7 @@
 
               <!-- Filter by Review / Rating -->
               <label for="duration" class="sr-only">Filtery by Ratings</label>
-               <select name="rating" id="rating" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+               <select name="rating" id="rating" class="bg-gray-soft rounded-pill p-2 font-medium">
                 <option value="" disabled selected>Review / Rating</option>
                 <option value="highest-rating">Highest Rating</option>
                 <option value="lowest-rating">Lowest Rating</option>
@@ -411,7 +415,7 @@
 
               <!-- Filter by Price Range -->
               <label for="duration" class="sr-only">Filtery by Ratings</label>
-               <select name="rating" id="rating" class="bg-[#E4E6E8] rounded-[50px] p-2 font-medium">
+               <select name="rating" id="rating" class="bg-gray-soft rounded-pill p-2 font-medium">
                 <option value="" disabled selected>Price range</option>
                 <option value="most-expensive">Most Expensive</option>
                 <option value="least-expensive">Least Expensive</option>
@@ -419,10 +423,10 @@
             </div>
           </div>
 
-          <!-- Tour Cards -->
+          <!-- Tour Cards Container -->
           <div
             id="tours-container"
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-2 gap-3 mt-4"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 mt-4 lg:mt-12 p-6 md:p-4 lg:p-2"
           >
             <article class="tourCard">
               <img 
@@ -430,7 +434,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -438,12 +442,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -455,7 +459,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -469,22 +473,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -497,7 +501,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -505,12 +509,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -522,7 +526,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -536,22 +540,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -564,7 +568,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -572,12 +576,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -589,7 +593,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -603,22 +607,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -631,7 +635,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -639,12 +643,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -656,7 +660,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -670,22 +674,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -698,7 +702,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -706,12 +710,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -723,7 +727,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -737,22 +741,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -765,7 +769,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -773,12 +777,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -790,7 +794,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -804,22 +808,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -832,7 +836,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -840,12 +844,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -857,7 +861,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -871,22 +875,22 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
@@ -899,7 +903,7 @@
                 alt="Treurer Olive Grove & Grand House"
               >
               <div
-                class="flex flex-col p-4 font-dana text-left space-y-2"
+                class="flex flex-col p-3 space-y-2"
               >
                 <h3
                   class="font-bold"
@@ -907,12 +911,12 @@
                   Treurer Olive Grove & Grand House - Adults Only + Flight
                 </h3>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Algaida
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <img 
                     src="/icons/hotel.png" 
@@ -924,7 +928,7 @@
                   5 Stars - 10/10 Exceptional (9)
                 </p>
                 <p
-                  class="flex items-center gap-2 text-[0.75rem]"
+                  class="flex items-center gap-2 text-xs"
                 >
                   <span aria-hidden="true">
                     <img 
@@ -938,30 +942,31 @@
                   Leipzig(LEJ)-Palma de mallorca
                 </p>
                 <p
-                  class="font-bold text-[1.25rem]"
+                  class="font-bold text-xl"
                 >
                   1,421 $
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Per traveller
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Sun,6 Jul - Sat , 12 Jul ( 6 nights)
                 </p>
                 <p
-                  class="text-[0.75rem]"
+                  class="text-xs"
                 >
                   Found 39 hours ago
                 </p>
               </div>
             </article>
           </div>
+
           <button
-            class="flex items-center justify-center font-bold font-manrope my-4 p-3 gap-2 rounded-[50px]"
+            class="flex items-center justify-center sm:self-center font-bold font-manrope m-4 p-3 lg:px-4 gap-2 rounded-pill"
           >
             <img 
               src="/icons/more.png" 
@@ -972,6 +977,68 @@
             >
             Load More Tours
           </button>
+        </section>
+
+        <!-- Stats Section -->
+        <section
+          id="stats-section"
+          class="wrapper justify-center mt-6 p-6 lg:h-[288px]"
+        >
+          <!-- Background image for mobile view -->
+          <div
+            class="absolute inset-0 z-0 m-4 rounded-box overflow-hidden lg:hidden"
+          >
+            <img 
+              src="/assets/stats-mobile-background.webp"
+              alt="A map on a desk with pins"
+              class="size-full object-cover brightness-50"
+            >
+          </div>
+
+          <!-- Background image for desktop view -->
+          <div
+            class="absolute inset-0 z-0 mx-2 rounded-box overflow-hidden hidden lg:block"
+          >
+            <img 
+              src="/assets/stats-desktop-background.webp" 
+              alt="A man with a tablet planning a travel"
+              width="1030"
+              height="288"
+              class="size-full brightness-50 object-cover object-top"
+            >
+          </div>
+
+          <!-- Stats -->
+          <div
+            class="flex flex-col justify-center items-center lg:flex-row z-10"
+          >
+            <div 
+              class="statsBox"
+            >
+              <span class="statsSpan">168k</span>
+              <p  class="statsP">Happy Clients</p>
+            </div>
+            <div class="statsDivider"></div>
+            <div 
+              class="statsBox"
+            >
+              <span class="statsSpan">+45k</span>
+              <p class="statsP">Destinations</p>
+            </div>
+            <div class="statsDivider"></div>
+            <div 
+              class="statsBox"
+            >
+              <span class="statsSpan">+49k</span>
+              <p class="statsP">Global Branch</p>
+            </div>
+            <div class="statsDivider"></div>
+            <div 
+              class="statsBox"
+            >
+              <span class="statsSpan">26k</span>
+              <p class="statsP">Campaigns</p>
+            </div>
         </section>
       </main>
 
