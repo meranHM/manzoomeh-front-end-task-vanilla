@@ -9,6 +9,7 @@ export default {
         fontFamily: {
         dana: ["Dana", "sans-serif"],
         manrope: ["Manrope", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       colors: {
         "brand-orange": "#FE9001",
