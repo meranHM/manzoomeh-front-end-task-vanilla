@@ -270,7 +270,7 @@
                       name="from" 
                       id="from"
                       placeholder="(Where are you from?)"
-                      class="placeholder:text-xs placeholder:hidden lg:placeholder:block"
+                      class="placeholder:text-white lg:placeholder:text-gray-suva"
                     >
                   </div>
                   <button
@@ -293,7 +293,7 @@
                       name="to" 
                       id="to" 
                       placeholder="(Where are you traveling to?)"
-                      class="placeholder:text-[0.7rem] placeholder:hidden lg:placeholder:block"
+                      class="placeholder:text-[0.7rem] placeholder:text-white lg:placeholder:text-gray-suva"
                     >
                   </div>
                 </div>
@@ -1340,36 +1340,36 @@
         <!-- Promotion Carousel Section -->
         <section
           id="promotion-carousel-section"
-          class="wrapper mt-28"
+          class="wrapper mt-28 px-4"
         >
           <!-- Navigation buttons -->
           <button
-            class="absolute top-1/2 -translate-y-1/2 left-0 bg-gray-soft p-5 rounded-full"
+            class="absolute hidden lg:block top-1/2 -translate-y-1/2 left-0 bg-gray-soft p-5 rounded-full"
           >
             <img src="/icons/arrow-left.png" alt="Left arrow" class="w-[9.5px] h-[9.5px]">
           </button>
           <button
-            class="absolute top-1/2 -translate-y-1/2 right-0 bg-gray-soft p-5 rounded-full"
+            class="absolute hidden lg:block top-1/2 -translate-y-1/2 right-0 bg-gray-soft p-5 rounded-full"
           >
             <img src="/icons/arrow-right.png" alt="Left arrow" class="w-[9.5px] h-[9.5px]">
           </button>
 
           <!-- Carousel container -->
           <div 
-            class="relative self-center px-6"
+            class="relative mx-4"
           >
             <div
-              class="flex overflow-x-auto gap-4 snap-x snap-mandatory scroll-smooth lg:scroll-px-4"
+              class="flex flex-col lg:flex-row justify-evenly items-center gap-2 px-6"
             >
               <!-- Slide 1 -->
               <div
-                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-1.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
+                class="w-full max-w-[388px] h-[232px] bg-[url('/assets/promotion/carousel-image-1.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
               >
                 <div
                   class="w-full flex flex-col justify-between items-end gap-10"
                 >
                   <h3 
-                    class="text-2xl font-extrabold leading-relaxed"
+                    class="backdrop-blur-sm p-1 rounded-md text-2xl font-extrabold leading-relaxed"
                   >
                     We Make Every<br />
                     Trip Special
@@ -1384,7 +1384,7 @@
 
               <!-- Slide 2 -->
               <div
-                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-2.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
+                class="w-full max-w-[388px] h-[232px] bg-[url('/assets/promotion/carousel-image-2.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-end justify-between"
               >
                 <div
                   class="w-full flex flex-col justify-between items-start gap-6"
@@ -1410,7 +1410,7 @@
 
               <!-- Slide 3 -->
               <div
-                class="min-w-[388px] h-[232px] snap-start bg-[url('/assets/promotion/carousel-image-3.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-start justify-between"
+                class="w-full max-w-[388px] h-[232px] bg-[url('/assets/promotion/carousel-image-3.png')] bg-no-repeat rounded-2xl p-6 text-white flex flex-col items-start justify-between"
               >
                 <div class="flex flex-col justify-between items-start gap-6">
                   <span 
@@ -1419,7 +1419,7 @@
                     Limited Offers
                   </span>
                   <h3 
-                    class="bg-orange-brand-light text-black px-3 rounded w-fit text-2xl font-extrabold leading-relaxed"
+                    class="bg-orange-brand-light text-black px-3 rounded w-fit text-2xl font-extrabold leading-relaxed text-nowrap"
                   >
                     Buy 1, Get 1 Free<br />
                     Attractions
