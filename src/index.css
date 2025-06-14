@@ -103,7 +103,7 @@
 
     /* Travel Blog Section */
     .travelBlogCard {
-        @apply relative rounded-box overflow-hidden w-[413px] h-[544px]
+        @apply relative rounded-box overflow-hidden w-full max-w-[413px] h-[544px]
     }
 
     /* Footer */
