@@ -2,15 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./fonts.css";
+
 
 @layer base {
+    @font-face {
+        font-family: "Dana";
+        src: url("/fonts/dana-regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: "Dana";
+        src: url("/fonts/dana-bold.woff2") format("woff2");
+        font-weight: 700;
+        font-style: normal;
+    }
     html, body {
         @apply w-full font-dana text-black bg-white
     }
  
     button {
-        @apply bg-blue-deep hover:bg-blue-deep-hover text-white text-sm cursor-pointer transition-colors
+        @apply bg-blue-deep hover:bg-blue-deep-hover text-white text-sm cursor-pointer transition-colors font-manrope text-nowrap
     }
 
     h1, h2, h3, h4, h5, h6, p, span {
