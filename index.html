@@ -117,7 +117,8 @@
           <!-- First layer for cloud background image -->
           <div
             class="absolute inset-0 z-0 bg-[url('/assets/yellow-clouds-background.png')] scale-[1.05] bg-right-top hidden lg:block"
-          ></div>
+          >
+          </div>
 
           <!-- Second layer for person background image -->
           <div
@@ -172,12 +173,13 @@
               id="seach-box"
               class="relative self-center lg:self-auto max-w-xl lg:max-w-none mt-16 mx-4 bg-white border border-gray-soft rounded-2xl p-3 shadow-search-box"
             >
+              <!-- Search Type -->
               <div
                 id="services-box"
                 class="flex flex-wrap justify-center items-center lg:flex-nowrap lg:justify-between lg:px-4"
               >
                   <div>
-                    <button class="serviceBtn">Flight</button>
+                    <button class="p-2 rounded-pill bg-orange-brand text-white">Flight</button>
                     <button class="serviceBtn">Hotels</button>
                     <button class="serviceBtn">Flight+Hotel</button>
                     <button class="serviceBtn">Tour</button>
@@ -193,110 +195,129 @@
                     <option value="one-way">One-way</option>
                     <option value="round-trip">Round-trip</option>
                   </select>
+              </div>
+
+              <!-- Search Form -->
+              <form class="flex flex-col items-center mt-4 py-3 lg:flex-row lg:flex-wrap xl:flex-nowrap lg:justify-center gap-1">
+                
+                <!-- Travel Origin and Destination -->
+                <div class="relative flex gap-2">
+                  <div
+                    class="searchInputBox"
+                  >
+                    <label for="from">From</label>
+                    <input 
+                      type="text" 
+                      name="from" 
+                      id="from"
+                      placeholder="(Where are you from?)"
+                      class="placeholder:text-xs placeholder:hidden lg:placeholder:block"
+                    >
+                  </div>
+                  <button
+                    class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white border border-gray-medium rounded-full p-1 lg:p-2"
+                  >
+                    <img 
+                      src="/icons/swap.png" 
+                      alt="Swap icon"
+                      width="24"
+                      height="24"
+                      class="w-6 h-6"
+                    >
+                  </button>
+                  <div
+                    class="searchInputBox"
+                  >
+                  <label for="to" class="mx-1">To</label>
+                    <input 
+                      type="text" 
+                      name="to" 
+                      id="to" 
+                      placeholder="(Where are you traveling to?)"
+                      class="placeholder:text-[0.7rem] placeholder:hidden lg:placeholder:block"
+                    >
+                  </div>
                 </div>
 
-                <form class="flex flex-col items-center mt-4 py-3 lg:flex-row lg:flex-wrap lg:justify-center gap-1">
-                  
-                  <!-- Travel Origin and Destination -->
-                  <div class="relative w-full lg:w-max flex flex-col gap-2 lg:flex-row lg:items-center">
-                    <div
-                      class="searchInputBox"
-                    >
-                      <label for="from">From</label>
-                      <input 
-                        type="text" 
-                        name="from" 
-                        id="from"
-                        placeholder="(Where are you from?)"
-                        class="lg:w-[265px]"
-                      >
-                    </div>
-                    <div
-                      class="searchInputBox"
-                    >
-                    <label for="to">To</label>
-                      <input 
-                        type="text" 
-                        name="to" 
-                        id="to" 
-                        placeholder="(Where are you traveling to?)"
-                        class="lg:w-[265px]"
-                      >
-                    </div>
-                  </div>
-
-                  <!-- Departure Date -->
-                  <div
-                    class="searchInputBox"
+                <!-- Departure Date -->
+                <div
+                  class="searchInputBox"
+                >
+                  <label for="departure-date">Date</label>
+                  <input 
+                    type="text" 
+                    name="departure-date" 
+                    id="departure-date" 
+                    placeholder="(Departure date)"
+                    class="lg:w-[150px]"
                   >
-                    <label for="departure-date">Date</label>
-                    <input 
-                      type="text" 
-                      name="departure-date" 
-                      id="departure-date" 
-                      placeholder="(Departure date)"
-                      class="lg:w-[150px]"
-                    >
-                  </div>
+                </div>
 
-
-                  <!-- Return Date -->
-                  <div
-                    class="searchInputBox"                
+                <!-- Return Date -->
+                <div
+                  class="searchInputBox"                
+                >
+                  <label for="return-date">Date</label>
+                  <input 
+                    type="text" 
+                    name="return-date" 
+                    id="return-date" 
+                    placeholder="(Return date)"
+                    class="lg:w-[150px]"
                   >
-                    <label for="return-date">Date</label>
-                    <input 
-                      type="text" 
-                      name="return-date" 
-                      id="return-date" 
-                      placeholder="(Return date)"
-                      class="lg:w-[150px]"
-                    >
-                  </div>
+                </div>
 
-                  <!-- Number of Adults -->
-                  <div
-                    class="searchInputBox"
+                <!-- Number of Adults -->
+                <div
+                  class="searchInputBox"
+                >
+                  <label for="number-of-adults">Adult:</label>
+                  <input 
+                    type="number" 
+                    name="number-of-adults" 
+                    id="number-of-adults" 
+                    placeholder="1"
+                    class="placeholder:text-base lg:w-[75px]"
                   >
-                    <label for="number-of-adults">Adult:</label>
-                    <input 
-                      type="number" 
-                      name="number-of-adults" 
-                      id="number-of-adults" 
-                      placeholder="1"
-                      class="placeholder:text-base lg:w-[75px]"
-                    >
-                  </div>
+                </div>
 
-
-                  <!-- Number of children -->
-                  <div
-                    class="searchInputBox"               
+                <!-- Number of children -->
+                <div
+                  class="searchInputBox"               
+                >
+                  <label for="number-of-children">Child:</label>  
+                  <input 
+                    type="number" 
+                    name="number-of-children" 
+                    id="number-of-children" 
+                    placeholder="0"
+                    class="placeholder:text-base lg:w-[75px]"
                   >
-                    <label for="number-of-children">Child:</label>  
-                    <input 
-                      type="number" 
-                      name="number-of-children" 
-                      id="number-of-children" 
-                      placeholder="0"
-                      class="placeholder:text-base lg:w-[75px]"
-                    >
-                  </div>
+                </div>
 
-
-                  <!-- Booking class -->
-                  <label for="booking-class" class="sr-only">Booking Class</label>
-                  <select name="booking-class" id="booking-class" class="w-full border border-gray-medium rounded-xl px-5 py-3 lg:w-[150px]">
+                <!-- Booking class -->
+                 <div
+                  class="searchInputBox"
+                 >
+                  <label for="booking-class" class="sr-only">
+                    Booking Class
+                  </label>
+                  <select 
+                    name="booking-class" 
+                    id="booking-class"
+                    class="py-[3px]"
+                  >
                     <option value="economy">Economy</option>
                     <option value="premium-economy">Premium Economy</option>
                     <option value="business">Business</option>
                     <option value="first-class">First Class</option>
                   </select>
+                </div>
 
-                  <button type="submit" class="rounded-pill px-5 py-3">
-                    Search
-                  </button>
-                </form>
+                <button type="submit" class="rounded-pill px-5 py-3">
+                  Search
+                </button>
+              </form>
             </div>
           </div>
         </section>
@@ -1043,11 +1064,11 @@
         <!-- Featured Hotels Section -->
         <section
           id="featured-hotels-section"
-          class="wrapper mt-8"
+          class="wrapper mt-12"
         >
           <!-- Headings -->
           <div
-            class="lg:flex lg:justify-between lg:items-center lg:px-4"
+            class="lg:flex lg:justify-between lg:items-center lg:px-4 mb-6"
           >
             <div
               class="text-center lg:text-left"
